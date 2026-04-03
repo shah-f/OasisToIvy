@@ -125,3 +125,37 @@ document.querySelectorAll("[data-tilt-card]").forEach((card) => {
   card.addEventListener("pointerleave", reset);
   card.addEventListener("blur", reset, true);
 });
+
+document.querySelectorAll("[data-contact-form]").forEach((form) => {
+  const status = form.querySelector("[data-contact-status]");
+
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    const data = new FormData(form);
+    const name = String(data.get("name") || "").trim();
+    const organization = String(data.get("organization") || "").trim();
+    const subject = String(data.get("subject") || "").trim();
+    const message = String(data.get("message") || "").trim();
+
+    if (!name || !subject || !message) {
+      if (status) status.textContent = "Please complete name, subject, and message.";
+      return;
+    }
+
+    const mailboxUser = ["foram", "shah", "2006"].join("");
+    const mailboxHost = ["gmail", "com"].join(".");
+    const recipient = `${mailboxUser}@${mailboxHost}`;
+    const lines = [
+      `Name: ${name}`,
+      organization ? `Organization: ${organization}` : null,
+      "",
+      message,
+    ].filter(Boolean);
+    const draftUrl = `mailto:${recipient}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(
+      lines.join("\n")
+    )}`;
+
+    if (status) status.textContent = "Opening your email app...";
+    window.location.href = draftUrl;
+  });
+});

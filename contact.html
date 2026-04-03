@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | FraudShield</title>
+    <meta
+      name="description"
+      content="Contact the FraudShield team to discuss pilots, deployment planning, and business outcomes."
+    />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <script src="assets/app.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="brand" href="index.html">
+          <span class="brand__eyebrow">Real-Time Fraud Prevention</span>
+          <span class="brand__name">FraudShield</span>
+        </a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-label="Open navigation" data-menu-toggle>
+          <span></span>
+        </button>
+        <nav class="site-nav" data-menu>
+          <a href="index.html" data-nav>Home</a>
+          <a href="opportunity.html" data-nav>Platform</a>
+          <a href="prioritization.html" data-nav>Who We Serve</a>
+          <a href="execution.html" data-nav>Deployment</a>
+          <a href="economics.html" data-nav>Outcomes</a>
+          <a href="contact.html" data-nav>Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="eyebrow">Contact</div>
+        <h1>Let’s talk about your fraud program.</h1>
+        <p class="page-hero__subtitle">
+          Share a little context and we will open a pre-filled email draft so you can send it directly.
+        </p>
+      </section>
+
+      <section class="section">
+        <div class="contact-shell reveal">
+          <form class="contact-form" data-contact-form>
+            <div class="contact-grid">
+              <label class="contact-field">
+                <span>Name</span>
+                <input type="text" name="name" autocomplete="name" required />
+              </label>
+
+              <label class="contact-field">
+                <span>Organization</span>
+                <input type="text" name="organization" autocomplete="organization" />
+              </label>
+
+              <label class="contact-field contact-field--full">
+                <span>Subject</span>
+                <input type="text" name="subject" required />
+              </label>
+
+              <label class="contact-field contact-field--full">
+                <span>Message</span>
+                <textarea name="message" rows="7" required></textarea>
+              </label>
+            </div>
+
+            <div class="contact-actions">
+              <button class="button button--primary" type="submit">Open Email Draft</button>
+              <p class="contact-status" data-contact-status aria-live="polite"></p>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__inner">
+        <span>FraudShield contact</span>
+        <span>Real-time fraud prevention for modern payment operations • <span data-year></span></span>
+      </div>
+    </footer>
+  </body>
+</html>
