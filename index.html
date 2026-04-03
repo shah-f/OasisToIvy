@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FraudShield | Real-Time Fraud Detection for Banks and PSPs</title>
+    <meta
+      name="description"
+      content="FraudShield helps banks, PSPs, and payment platforms stop payment fraud in real time with high detection accuracy, low false positives, and fast deployment."
+    />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <script src="assets/app.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="brand" href="index.html">
+          <span class="brand__eyebrow">Real-Time Fraud Prevention</span>
+          <span class="brand__name">FraudShield</span>
+        </a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-label="Open navigation" data-menu-toggle>
+          <span></span>
+        </button>
+        <nav class="site-nav" data-menu>
+          <a href="index.html" data-nav>Home</a>
+          <a href="opportunity.html" data-nav>Platform</a>
+          <a href="prioritization.html" data-nav>Who We Serve</a>
+          <a href="execution.html" data-nav>Deployment</a>
+          <a href="economics.html" data-nav>Outcomes</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="reveal">
+          <div class="eyebrow">Built for banks, PSPs, and payment platforms</div>
+          <h1 class="hero__title">FraudShield</h1>
+          <p class="hero__subtitle">
+            Stop payment fraud before funds leave the institution. FraudShield is built for teams facing APP fraud,
+            scam reimbursement pressure, and rising manual-review costs, with real-time decisions and a practical path
+            to deployment.
+          </p>
+          <div class="hero__actions">
+            <a class="button button--primary" href="opportunity.html">Explore the platform</a>
+            <a class="button button--secondary" href="execution.html">See the deployment path</a>
+          </div>
+        </div>
+
+        <aside class="hero-card hero-card--interactive reveal" data-tilt-card>
+          <div class="hero-card__globe" aria-hidden="true"></div>
+          <div class="hero-card__grid">
+            <div class="hero-card__label">Signal View</div>
+            <div class="signal-tabs" role="tablist" aria-label="FraudShield value drivers">
+              <button class="signal-tab is-active" type="button" role="tab" aria-selected="true" data-signal-tab="loss">
+                Losses
+              </button>
+              <button class="signal-tab" type="button" role="tab" aria-selected="false" data-signal-tab="ops">
+                Ops
+              </button>
+              <button class="signal-tab" type="button" role="tab" aria-selected="false" data-signal-tab="speed">
+                Speed
+              </button>
+            </div>
+
+            <div class="signal-panel is-active" data-signal-panel="loss">
+              <h2>Lower direct fraud losses before settlement.</h2>
+              <p>
+                For institutions under APP fraud and scam pressure, the biggest gain comes from stronger real-time
+                detection before funds move and reimbursement costs hit.
+              </p>
+              <div class="hero-card__metrics">
+                <div class="mini-metric">
+                  <strong>95%</strong>
+                  <span>detection rate for high-volume payment environments</span>
+                </div>
+                <div class="mini-metric">
+                  <strong>$4.41</strong>
+                  <span>true cost for every $1 of fraud</span>
+                </div>
+                <div class="mini-metric">
+                  <strong>&lt;50ms</strong>
+                  <span>decisioning to support real-time rails</span>
+                </div>
+              </div>
+              <div class="signal-bars" aria-hidden="true">
+                <span style="--bar: 92%"></span>
+                <span style="--bar: 74%"></span>
+                <span style="--bar: 58%"></span>
+              </div>
+            </div>
+
+            <div class="signal-panel" data-signal-panel="ops" hidden>
+              <h2>Free fraud teams from low-value review work.</h2>
+              <p>
+                FraudShield is designed to reduce noisy alerts so analysts can focus on meaningful risk, not swollen
+                queues and unnecessary customer friction.
+              </p>
+              <div class="hero-card__metrics">
+                <div class="mini-metric">
+                  <strong>0.5%</strong>
+                  <span>false positives to cut manual-review load</span>
+                </div>
+                <div class="mini-metric">
+                  <strong>94%</strong>
+                  <span>fewer false positives versus legacy systems</span>
+                </div>
+                <div class="mini-metric">
+                  <strong>$49</strong>
+                  <span>saved per 1,000 transactions in modeled outcomes</span>
+                </div>
+              </div>
+              <div class="signal-bars" aria-hidden="true">
+                <span style="--bar: 28%"></span>
+                <span style="--bar: 86%"></span>
+                <span style="--bar: 63%"></span>
+              </div>
+            </div>
+
+            <div class="signal-panel" data-signal-panel="speed" hidden>
+              <h2>Move from evaluation to production quickly.</h2>
+              <p>
+                The value proposition is not only stronger model performance. It is reaching pilot, validation, and
+                production on a timeline that buying teams can realistically support.
+              </p>
+              <div class="hero-card__metrics">
+                <div class="mini-metric">
+                  <strong>&lt;90 days</strong>
+                  <span>targeted deployment timeline</span>
+                </div>
+                <div class="mini-metric">
+                  <strong>3 stages</strong>
+                  <span>discover, validate, and launch path</span>
+                </div>
+                <div class="mini-metric">
+                  <strong>API-first</strong>
+                  <span>architecture for modern payment stacks</span>
+                </div>
+              </div>
+              <div class="signal-bars" aria-hidden="true">
+                <span style="--bar: 44%"></span>
+                <span style="--bar: 67%"></span>
+                <span style="--bar: 90%"></span>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </section>
+
+      <section class="section">
+        <div class="section__header reveal">
+          <div>
+            <div class="section__eyebrow">Why FraudShield</div>
+            <h2>Fraud prevention that fits how modern payment teams actually work.</h2>
+          </div>
+          <p class="section__lead">
+            The platform is shaped around the pressures customers are already feeling: real-time payment risk, growing
+            reimbursement exposure, and a need to improve outcomes without overloading operations teams.
+          </p>
+        </div>
+
+        <div class="story-grid">
+          <article class="story-card reveal">
+            <div class="label-row">
+              <span class="label label--bright">Fraud Loss Control</span>
+            </div>
+            <h3>Catch more fraud before settlement</h3>
+            <p>
+              FraudShield is designed for pre-transaction detection, where the institution has the highest leverage to
+              prevent losses instead of trying to recover funds after the fact.
+            </p>
+            <ul class="bullet-list">
+              <li>Built for APP fraud and scam-driven payment risk</li>
+              <li>Designed for faster payments and other real-time rails</li>
+              <li>Explainable outputs support escalation and remediation decisions</li>
+            </ul>
+          </article>
+
+          <article class="story-card reveal">
+            <div class="label-row">
+              <span class="label label--bright">Operational Efficiency</span>
+            </div>
+            <h3>Reduce manual review without sacrificing control</h3>
+            <p>
+              Low false-positive performance helps fraud operations teams focus on the alerts that matter, instead of
+              expanding headcount to keep up with growing payment volumes.
+            </p>
+            <ul class="bullet-list">
+              <li>38% cost savings from stronger fraud control and lower manual-review load</li>
+              <li>$49 saved per 1,000 transactions in fraud management costs</li>
+              <li>Improves customer experience by minimizing unnecessary friction</li>
+            </ul>
+          </article>
+
+          <article class="story-card reveal">
+            <div class="label-row">
+              <span class="label label--bright">Faster Implementation</span>
+            </div>
+            <h3>Go live without a full-stack replacement</h3>
+            <p>
+              FraudShield is designed to sit alongside existing payment infrastructure and fraud workflows, making it
+              easier to pilot, validate, and move to production quickly.
+            </p>
+            <ul class="bullet-list">
+              <li>Deployment targeted in under 90 days</li>
+              <li>Native API model for modern payment stacks</li>
+              <li>Structured path for sandbox, pilot, and full rollout</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section__header reveal">
+          <div>
+            <div class="section__eyebrow">Built For</div>
+            <h2>Choose the buyer environment closest to yours.</h2>
+          </div>
+          <p class="section__lead">
+            The same platform solves different problems depending on where it sits in the payment stack. Use the switcher
+            to see how the value proposition changes by buyer type.
+          </p>
+        </div>
+
+        <div class="audience-switcher reveal" data-switcher>
+          <div class="switcher-buttons" role="tablist" aria-label="Buyer types">
+            <button class="switcher-button is-active" type="button" role="tab" aria-selected="true" data-switcher-tab="digital">
+              Digital Banks
+            </button>
+            <button class="switcher-button" type="button" role="tab" aria-selected="false" data-switcher-tab="psp">
+              PSPs
+            </button>
+            <button class="switcher-button" type="button" role="tab" aria-selected="false" data-switcher-tab="enterprise">
+              Enterprise Banks
+            </button>
+          </div>
+
+          <div class="switcher-panels">
+            <article class="switcher-panel is-active" data-switcher-panel="digital">
+              <div class="switcher-panel__main">
+                <div class="label-row">
+                  <span class="label label--bright">Digital Banks and Challengers</span>
+                </div>
+                <h3>Reduce APP fraud and scam reimbursement exposure without adding friction.</h3>
+                <p>
+                  For digital banks, the core challenge is balancing fraud loss, customer experience, and analyst
+                  workload in a faster payments environment.
+                </p>
+                <ul class="bullet-list">
+                  <li>Best fit for APP fraud and scam-heavy payment journeys</li>
+                  <li>Supports fraud, risk, ops, and product stakeholders together</li>
+                  <li>Good match for pilot-led deployment and faster decision cycles</li>
+                </ul>
+              </div>
+              <aside class="switcher-panel__aside">
+                <strong>Start with</strong>
+                <span>How much reimbursement exposure and analyst effort come from preventable payment fraud?</span>
+              </aside>
+            </article>
+
+            <article class="switcher-panel" data-switcher-panel="psp" hidden>
+              <div class="switcher-panel__main">
+                <div class="label-row">
+                  <span class="label label--bright">PSPs and Fintech Platforms</span>
+                </div>
+                <h3>Protect transaction flows while preserving approval rates and customer experience.</h3>
+                <p>
+                  For PSPs, the value is both operational and financial: fewer unnecessary interventions, cleaner
+                  alerts, and stronger protection around high-velocity payment traffic.
+                </p>
+                <ul class="bullet-list">
+                  <li>Strong fit for payment risk, fraud ops, and platform teams</li>
+                  <li>Useful where checkout friction and trust both matter</li>
+                  <li>API-first architecture supports modern integration patterns</li>
+                </ul>
+              </div>
+              <aside class="switcher-panel__aside">
+                <strong>Start with</strong>
+                <span>Where are false positives creating avoidable friction or review cost?</span>
+              </aside>
+            </article>
+
+            <article class="switcher-panel" data-switcher-panel="enterprise" hidden>
+              <div class="switcher-panel__main">
+                <div class="label-row">
+                  <span class="label label--bright">Regional and Enterprise Banks</span>
+                </div>
+                <h3>Add a stronger fraud-control layer with a credible pilot-to-production path.</h3>
+                <p>
+                  Larger institutions often care about governance, implementation assurance, and procurement realism as
+                  much as model quality. FraudShield is designed to support all three.
+                </p>
+                <ul class="bullet-list">
+                  <li>Relevant where boards and regulators want stronger control</li>
+                  <li>Supports structured pilot and enterprise rollout discussions</li>
+                  <li>Can sit alongside existing programs instead of forcing a full replacement</li>
+                </ul>
+              </div>
+              <aside class="switcher-panel__aside">
+                <strong>Start with</strong>
+                <span>What would make a fraud upgrade easy for risk, tech, and procurement to back?</span>
+              </aside>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="dual-grid">
+          <article class="quote-card why-now-card reveal">
+            <div class="why-now-card__kicker">Why now</div>
+            <strong>Why now</strong>
+            <p>
+              Reimbursement rules, scam growth, and real-time payment adoption are turning fraud prevention into a board-level issue. Institutions need measurable performance and a credible deployment path, not another long transformation project.
+            </p>
+          </article>
+
+          <article class="surface-card next-step-card reveal">
+            <div class="label-row">
+              <span class="label">Next step</span>
+            </div>
+            <h3>Start with a pilot, sandbox, or ROI workshop.</h3>
+            <p>
+              FraudShield can support a scoped pilot for a focused fraud problem, a technical integration review, or a
+              business case discussion for UK and Singapore payment environments.
+            </p>
+            <div class="hero__actions" style="margin-top: 1.2rem;">
+              <a class="button button--primary" href="execution.html">Review deployment</a>
+              <a class="button button--secondary" href="economics.html">Review business outcomes</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section__header reveal">
+          <div>
+            <div class="section__eyebrow">Explore The Site</div>
+            <h2>Everything a buyer needs to understand the product quickly.</h2>
+          </div>
+        </div>
+
+        <div class="link-grid">
+          <a class="link-card reveal" href="opportunity.html">
+            <h3>Platform</h3>
+            <p>See how FraudShield performs, why the timing is urgent, and what sets the platform apart from legacy and AI-native alternatives.</p>
+            <span class="link-card__arrow">Open page</span>
+          </a>
+          <a class="link-card reveal" href="prioritization.html">
+            <h3>Who We Serve</h3>
+            <p>Review the institution types, regions, and commercial contexts where FraudShield is best positioned to deliver value.</p>
+            <span class="link-card__arrow">Open page</span>
+          </a>
+          <a class="link-card reveal" href="execution.html">
+            <h3>Deployment</h3>
+            <p>Walk through the pilot-to-production path, regional deployment readiness, and the 100-day implementation view.</p>
+            <span class="link-card__arrow">Open page</span>
+          </a>
+          <a class="link-card reveal" href="economics.html">
+            <h3>Outcomes</h3>
+            <p>See the commercial model, ROI framing, and the metrics customers can use to build a clear approval case.</p>
+            <span class="link-card__arrow">Open page</span>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__inner">
+        <span>FraudShield customer site</span>
+        <span>Real-time fraud prevention for modern payment operations • <span data-year></span></span>
+      </div>
+    </footer>
+  </body>
+</html>
